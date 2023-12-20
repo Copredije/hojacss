@@ -1,0 +1,10 @@
+{% extends 'cssapp/acta_base.html' %}
+
+{% block content %}
+    <h2>Acta a modificar</h2>
+    <form method="POST" class="acta-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Guardar</button>
+    </form>
+{% endblock %}

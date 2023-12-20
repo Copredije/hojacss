@@ -1,0 +1,35 @@
+.fondoimagen{ 
+    background-image: url(¨ActaCSS.jpg¨);
+    
+}
+.acta-form textarea, .acta-form input {
+    width: 100%;
+}
+.acta {
+    margin-bottom: 70px;
+}
+
+.acta h2 a, .acta h2 a:visited {
+    color: #000000;
+}
+
+.content {
+    margin-left: 40px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Century', cursive;
+}
+
+table, col {
+    border: 1px solid black;
+  }
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+

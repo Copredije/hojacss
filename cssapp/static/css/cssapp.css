@@ -1,0 +1,56 @@
+.page-header {
+    background-color: #196F3D;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+.page-footer {
+    margin-top:50px;
+    width:100%;
+    height:200px;
+    background-color: #61b885;
+}
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #ffffff;
+    font-size: 26pt;
+    text-decoration: none;
+}
+
+.content {
+    margin-left: 40px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Century', cursive;
+}
+
+table, th, td {
+    border: 1px solid black;
+  }
+
+.date {
+    color: #828282;
+}
+
+.save {
+    float: right;
+}
+
+.acta-form textarea, .acta-form input {
+    width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.acta {
+    margin-bottom: 70px;
+}
+
+.acta h2 a, .acta h2 a:visited {
+    color: #000000;
+}
+

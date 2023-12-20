@@ -1,0 +1,15 @@
+{% extends 'cssapp/acta_base.html' %}
+
+{% block content %}
+    <div class="acta">
+        <div class="date">
+            Fecha: {{ acta.fecha }}
+        </div>
+        <h2>Obra {{ acta.obra }}</h2>
+        <h3>Ubicación {{ acta.ubicacion }}</h3>
+        <h3>Ubicación {{ acta.coordinador }}</h3>
+        <p>{{ acta.texto|linebreaksbr }}</p>
+        <h4>Firma Coordinador {{ acta.firmacss }}</h4>
+        <h4>Firma Contratista {{ acta.firmacont }}</h4>
+    </div>
+{% endblock %}

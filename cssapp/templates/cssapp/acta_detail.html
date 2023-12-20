@@ -1,0 +1,22 @@
+{% extends 'cssapp/acta_base.html' %}
+
+{% block content %}
+    <div class="acta">
+        {% if acta.fecha %}
+            <div class="date">
+                Fecha {{ acta.fecha }}
+            </div>
+        {% else %}
+            <a class="btn btn-default">Guardar Acta</a>
+        {% endif %}
+        {% if user.is_authenticated %}
+            <a class="'btn btn-default" href="{% url 'cssapp:acta_edit' acta.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+        {% endif %}
+        <h2>Obra {{ acta.obra }}</h2>
+        <h3>Ubicación {{ acta.ubicacion }}</h3>
+        <p>{{ acta.texto|linebreaksbr }}</p>
+        <h4>Firma Coordinador {{ acta.firmacss }}</h4>
+        <h4>Firma Contratista {{ acta.firmacont }}</h4>
+    </div>
+    <button  href ="{% url 'cssapp:acta_pdf' acta.pk %}">Descargar PDF</button>
+{% endblock %}

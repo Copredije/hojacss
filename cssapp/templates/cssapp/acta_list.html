@@ -1,0 +1,29 @@
+{% extends 'cssapp/acta_base.html' %}
+
+
+{% block content %}
+<div class="content container">
+    <div class="row">
+        <div class="col-md-8">
+            {% for acta in actas %}
+                <div class="acta">
+                    <table>
+                        <tr>
+                          <th>Fecha</th>
+                          <th>Coordinador</th>
+                          <th>Obra</th>
+                          <th>Ubicación</th>
+                        </tr>
+                        <tr>
+                          <td class="date">{{ acta.fecha }}</td>
+                          <td>{{ acta.coordinador }}</td>
+                          <td><a href="{% url 'cssapp:acta_detail' acta.pk %}">{{ acta.obra }}</a></td>
+                          <td>{{ acta.ubicacion }}</td>
+                        </tr>
+                    <table>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}
